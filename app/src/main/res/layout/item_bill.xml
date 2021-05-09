@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/item_bill">
+    <LinearLayout
+        android:id="@+id/tieude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+        <TextView
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:id="@+id/bill_email_buyer"
+            android:fontFamily="@font/font"
+            android:textStyle="bold"
+            android:text="Email khách hàng"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"/>
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/bill_date"
+            android:gravity="center"
+            android:fontFamily="@font/font"
+            android:textStyle="bold"
+            android:text="Ngày order"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/bill_address"
+            android:gravity="center"
+            android:fontFamily="@font/font"
+            android:textStyle="bold"
+            android:text="Địa chỉ"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

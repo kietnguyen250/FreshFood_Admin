@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/item_feedback"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="abc@gmail.com"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:textSize="17sp"
+        android:textColor="@color/gray"/>
+
+
+        <TextView
+            android:id="@+id/txtContent"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:background="@drawable/btn_feedback"
+            android:padding="11dp"
+            android:text="His Message"
+            android:layout_width="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/txtTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="02/03/2019 05:59PM"
+        android:textColor="@color/black"
+        android:layout_gravity="right"
+        android:textSize="12sp"/>
+
+
+</LinearLayout>

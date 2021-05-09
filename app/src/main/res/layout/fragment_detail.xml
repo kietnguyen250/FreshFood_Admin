@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/background">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_back"
+                android:src="@drawable/ic_back"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:fontFamily="@font/lanchscreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Detail Bill"
+                android:textStyle="bold"
+                android:textColor="@color/gray"
+                android:textSize="35dp"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/iv_AddDetail"
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_add"
+                />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/tieude"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+        <TextView
+            android:textSize="18dp"
+            android:gravity="center"
+            android:fontFamily="@font/font_bold"
+            android:text="Tên sản phẩm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"/>
+        <TextView
+            android:textSize="18dp"
+            android:gravity="center"
+            android:fontFamily="@font/font_bold"
+            android:text="Số lượng "
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <TextView
+            android:textSize="18dp"
+            android:gravity="center"
+            android:fontFamily="@font/font_bold"
+            android:text="Giá"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tieude"
+        tools:listitem="@layout/item_cart"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="1dp" />
+    <RelativeLayout
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:id="@+id/linearBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:gravity="center"
+            android:fontFamily="@font/font_bold"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Tổng tiền: "
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:gravity="center"
+            android:textStyle="bold|italic"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="0"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tvSum"/>
+
+    </RelativeLayout>
+</RelativeLayout>
