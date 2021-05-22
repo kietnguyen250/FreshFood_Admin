@@ -29,7 +29,7 @@ import static android.content.Context.MODE_PRIVATE;
 
 public class ProfileFragment extends Fragment {
     TextView tvFullName, tvEmail, tvEmailAddress, tvPhoneNumber, tvAddress;
-    Button btnEditProfile, btnChangePassword, edViewFeedback;
+    Button btnCustomerManager, btnLogOut, edViewFeedback;
     DatabaseReference mData;
     @Nullable
     @Override
@@ -49,6 +49,15 @@ public class ProfileFragment extends Fragment {
                 FeedBack_Fragment feedBack_fragment = new FeedBack_Fragment();
 //                fragment_food.setArguments(args);
                 getFragmentManager().beginTransaction().replace(R.id.fragment_container, feedBack_fragment).commit();
+            }
+        });
+
+        btnCustomerManager.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                CustomerFragment customer_fragment = new CustomerFragment();
+//                fragment_food.setArguments(args);
+                getFragmentManager().beginTransaction().replace(R.id.fragment_container, customer_fragment).commit();
             }
         });
 
@@ -93,6 +102,8 @@ public class ProfileFragment extends Fragment {
         tvEmailAddress = view.findViewById(R.id.tvEmailAddress);
         tvAddress = view.findViewById(R.id.tvAddress);
         edViewFeedback = view.findViewById(R.id.edViewFeedback);
+        btnCustomerManager = view.findViewById(R.id.btnCustomerManager);
+        btnLogOut = view.findViewById(R.id.btnLogOut);
     }
 
 }

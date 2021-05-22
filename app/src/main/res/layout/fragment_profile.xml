@@ -187,26 +187,16 @@
 <!--        Địa chỉ-->
         <Button
             android:background="@drawable/bg_button"
-            android:id="@+id/btnEditProfile"
+            android:id="@+id/btnCustomerManager"
             android:textColor="@color/white"
             android:layout_marginTop="30dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="70dp"
             android:layout_marginRight="70dp"
-            android:text="Edit Profile"
+            android:text="Customer Manager"
             />
-        <Button
-            android:id="@+id/edChangePassword"
-            android:textColor="@color/white"
-            android:background="@drawable/bg_button"
-            android:layout_marginTop="20dp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="70dp"
-            android:layout_marginRight="70dp"
-            android:text="Change password"
-            />
+
 
         <Button
             android:id="@+id/edViewFeedback"
@@ -218,6 +208,18 @@
             android:layout_marginLeft="70dp"
             android:layout_marginRight="70dp"
             android:text="View feedback"
+            />
+
+        <Button
+            android:id="@+id/btnLogOut"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_button"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:text="Log Out"
             />
     </LinearLayout>
 
